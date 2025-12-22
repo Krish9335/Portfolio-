@@ -564,7 +564,7 @@
 
     .timeline-item {
       position: relative;
-      padding: 0.85rem 0.9rem 0.9rem 1.05rem;
+      padding: 0.85rem 0.9rem 1rem 1.05rem;
       border-radius: var(--radius-md);
       background: rgba(15, 23, 42, 0.96);
       border: 1px solid rgba(148, 163, 184, 0.25);
@@ -598,8 +598,7 @@
 
     /* Resume */
     .resume-card {
-      display: grid;
-      grid-template-columns: minmax(0, 2.5fr) minmax(0, 2fr);
+      display: grid;    
       gap: 1.4rem;
       align-items: center;
       background: radial-gradient(circle at top left, #22c55e22 0, #020617 60%);
@@ -838,12 +837,18 @@
               <span class="hero-highlight">practical insights.</span>
             </h1>
             <p class="hero-text">
-              Enthusiastic and detail‑oriented Data Science and Machine Learning
-              aspirant with hands‑on experience in EDA, data cleaning, statistical
-              modeling, and predictive algorithms using Python.
+              Enthusiastic and detail-oriented Data Science and Machine Learning 
+professional with hands-on experience in Exploratory Data Analysis (EDA), 
+data cleaning, data analytics, and statistical modeling. Skilled in developing 
+machine learning algorithms for predictive and regression tasks, and 
+transforming raw data into actionable insights through data visualization and 
+storytelling. Strong understanding of statistical concepts, model evaluation, 
+and data-driven decision-making. Passionate about applying AI and ML 
+techniques to solve real-world problems and continuously learning emerging 
+technologies in data science
             </p>
             <div class="hero-meta">
-              <span><span class="hero-dot"></span> Based in Lucknow, Uttar Pradesh</span>
+              <span><span class="hero-dot"></span> Lucknow, Uttar Pradesh</span>
               <span>Data Science · AI & ML · Analytics</span>
             </div>
             <div class="hero-actions">
@@ -855,7 +860,7 @@
               <a href="https://www.linkedin.com/in/krishna-kumar-prajapati-9a9327355" target="_blank" rel="noreferrer">LinkedIn</a>
               <a href="https://github.com/Krish9335" target="_blank" rel="noreferrer">GitHub</a>
               <span>·</span>
-              <span>Email: krish.pajapati0902@gmail.com</span>
+              <span>Email: <a href="mailto:krish.prajapati0902@gmail.com">krish.prajapati0902@gmail.com</a></span>
             </div>
           </div>
 
@@ -913,12 +918,12 @@
             <div class="about-facts">
               <div class="fact">
                 <strong>Education</strong>
-                MCA, Shri Ramswaroop Memorial University (2024–2026)<br />
+                MCA, Sri Ramswaroop Memorial University (2024–2026)<br />
                 BCA, Makhanlal Chaturvedi National University (2021–2024)
               </div>
               <div class="fact">
                 <strong>Focus areas</strong>
-                Exploratory data analysis, supervised ML, model evaluation, and data
+                Exploratory data analysis, supervised ML,Statistical Analysis & Hypothesis Testing, model evaluation, and data
                 visualization dashboards.
               </div>
               <div class="fact">
@@ -947,6 +952,12 @@
               <h3>Programming & Tools</h3>
               <div class="skill-tags">
                 <span class="skill-tag">Python</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">Advance Excel</span>
+                <span class="skill-tag">Web Scraping</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Power BI</span>
                 <span class="skill-tag">Jupyter Notebook</span>
                 <span class="skill-tag">Git & GitHub</span>
               </div>
@@ -954,7 +965,7 @@
             <div class="skill-group">
               <h3>Data & Analysis</h3>
               <div class="skill-tags">
-                <span class="skill-tag">EDA</span>
+                <span class="skill-tag">Exploratory Data Analysis (EDA)</span>
                 <span class="skill-tag">Data cleaning</span>
                 <span class="skill-tag">Feature engineering</span>
                 <span class="skill-tag">Data interpretation</span>
@@ -966,6 +977,7 @@
                 <span class="skill-tag">Regression models</span>
                 <span class="skill-tag">Classification models</span>
                 <span class="skill-tag">Model evaluation (MSE, R²)</span>
+
               </div>
             </div>
             <div class="skill-group">
@@ -974,7 +986,7 @@
                 <span class="skill-tag">Statistical analysis</span>
                 <span class="skill-tag">Hypothesis testing</span>
                 <span class="skill-tag">Correlation analysis</span>
-                <span class="skill-tag">Matplotlib / Seaborn</span>
+                <span class="skill-tag">Matplotlib </span>
               </div>
             </div>
           </div>
@@ -1121,10 +1133,6 @@
             RESUME
           </div>
           <h2 class="section-title">Resume access</h2>
-          <p class="section-subtitle">
-            Download the current PDF or use the upload control below when you update your resume version.
-          </p>
-
           <div class="resume-card" style="margin-top:1.6rem;">
             <div>
               <h3>Download my resume</h3>
@@ -1134,9 +1142,8 @@
                 latest PDF copy.
               </p>
               <div class="resume-actions">
-                <!-- Replace href with real hosted PDF link -->
                 <a
-                  href="Data-Science-Resume-Krish-1.pdf"
+                  href="Krishna-Kumar-Prajapati-Resume.pdf"
                   class="btn btn-primary"
                   download
                 >
@@ -1153,30 +1160,7 @@
               </div>
             </div>
 
-            <form
-              class="resume-upload-form"
-              onsubmit="event.preventDefault(); alert('In production, this will upload your new resume to the server.');"
-            >
-              <div class="file-input-wrapper">
-                <div class="file-input-label">Choose new resume (PDF)</div>
-                <input
-                  type="file"
-                  id="resumeFile"
-                  name="resumeFile"
-                  accept=".pdf"
-                  aria-label="Upload new resume"
-                />
-              </div>
-              <div id="fileName" class="file-name">No file selected</div>
-              <button type="submit" class="btn btn-outline" style="width:max-content;">
-                Upload (placeholder)
-              </button>
-              <p class="upload-note">
-                This upload button is a <strong>front‑end placeholder</strong>.
-                When deployed, connect it to a backend or storage service to really
-                store your updated resume file.
-              </p>
-            </form>
+            
           </div>
         </div>
       </section>
@@ -1194,38 +1178,43 @@
           </p>
 
           <div class="contact-grid" style="margin-top:1.6rem;">
-            <form
-              class="contact-form"
-              onsubmit="event.preventDefault(); alert('This is a front‑end only form. Connect it to a service like Formspree or a backend to receive messages.');"
-            >
-              <div class="field">
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your name" required />
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="your@email.com"
-                  required
-                />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  placeholder="Tell me about the role or project..."
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width:max-content;">
-                Send message
-              </button>
-            </form>
+           <form
+  class="contact-form"
+  action="https://formspree.io/f/xdkoeoqa"
+  method="POST"
+  id="contactForm"
+>
+  <div class="field">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" placeholder="Your name" required />
+  </div>
+  <div class="field">
+    <label for="email">Email</label>
+    <input
+      id="email"
+      name="_replyto"
+      type="email"
+      placeholder="your@email.com"
+      required
+    />
+  </div>
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Tell me about the role or project..."
+      required
+    ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" style="width:max-content;">
+    Send message
+  </button>
+  <div id="formStatus" style="margin-top:1rem;font-size:0.9rem;"></div>
+</form>
 
             <div class="contact-info">
-              <p>Email: <strong>krish9335280902@gmail.com</strong></p>
+              <p>Email: <strong><a href="mailto:krish.prajapati0902@gmail.com">krish.prajapati0902@gmail.com</a></strong></p>
               <p>Location: Lucknow, Uttar Pradesh, India</p>
               <p>Open to remote and on‑site opportunities.</p>
               <div class="contact-links" style="margin-top:0.8rem;display:flex;flex-direction:column;gap:0.4rem;">
@@ -1254,22 +1243,69 @@
     </footer>
   </div>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Dynamic year
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Show selected file name for resume upload
-    const resumeInput = document.getElementById("resumeFile");
-    const fileNameSpan = document.getElementById("fileName");
+    const resumeInput = document.getElementById("resumeFile");    const fileNameDisplay = document.getElementById("fileName");
+    
+    if (resumeInput) {
+      resumeInput.addEventListener("change", function() {
+        if (this.files && this.files[0]) {
+          fileNameDisplay.textContent = this.files[0].name;
+        } else {
+          fileNameDisplay.textContent = "No file selected";
+        }
+      });
+    }
 
-    resumeInput.addEventListener("change", () => {
-      if (resumeInput.files && resumeInput.files.length > 0) {
-        fileNameSpan.textContent = resumeInput.files[0].name;
+    // Contact form submission handling
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    
+    // Show loading state
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+    formStatus.textContent = "";
+    
+    try {
+      const formData = new FormData(contactForm);
+      
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok) {
+        formStatus.style.color = "#22c55e";
+        formStatus.textContent = "✓ Message sent successfully! I'll get back to you soon.";
+        contactForm.reset();
       } else {
-        fileNameSpan.textContent = "No file selected";
+        throw new Error(data.error || "Form submission failed");
       }
-    });
+    } catch (error) {
+      console.error("Form error:", error);
+      formStatus.style.color = "#ef4444";
+      formStatus.textContent = "× Failed to send message. Please try again or email me directly.";
+    } finally {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }
+  });
+}
   </script>
 </body>
 </html>
-
